@@ -28,7 +28,7 @@ def move_stepperA(direction):
         GPIO.output(StepperA_DirPin, GPIO.HIGH)
         GPIO.output(StepperA_StepPin, GPIO.HIGH)
         GPIO.output(StepperA_StepPin, GPIO.LOW)
-        elif direction == "down":
+    elif direction == "down":
         # Set the opposite direction of the motor
         GPIO.output(StepperA_DirPin, GPIO.LOW)
         GPIO.output(StepperA_StepPin, GPIO.HIGH)
